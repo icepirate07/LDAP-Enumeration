@@ -11,6 +11,12 @@ ldapsearch: @(#) $OpenLDAP: ldapsearch 2.6.9+dfsg-1 (Jan 15 2025 02:30:51) $
 ### Use " " to specify the type of search
 
 ```bash
+## Format
+
+ldapsearch -H ldap://server -D BindDN -w 'passwd' -b "Base DN" "Search Type"
+```
+
+```bash
 ## Basic User Enumeration
 
 ldapsearch -H ldap://support.htb -D ldap@support.htb -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "*"
