@@ -10,8 +10,8 @@ ldapsearch: @(#) $OpenLDAP: ldapsearch 2.6.9+dfsg-1 (Jan 15 2025 02:30:51) $
 ### Use -b to provide the base DN for the search
 ### Use "*" to specify the type of search
 
-## Basic User Enumeration
 ```bash
+## Basic User Enumeration
 
 ldapsearch -H ldap://support.htb -D ldap@support.htb -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "*"
 
