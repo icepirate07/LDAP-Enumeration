@@ -8,7 +8,7 @@ ldapsearch: @(#) $OpenLDAP: ldapsearch 2.6.9+dfsg-1 (Jan 15 2025 02:30:51) $
 ### Use -D for the bind DN (User name)
 ### Use -w to supply password directly
 ### Use -b to provide the base DN for the search
-### Use "*" to specify the type of search
+### Use " " to specify the type of search
 
 ```bash
 ## Basic User Enumeration
