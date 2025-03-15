@@ -1,10 +1,14 @@
-## LDAP Enumeration Commands
+# LDAP Enumeration Commands
+ldapsearch: @(#) $OpenLDAP: ldapsearch 2.6.9+dfsg-1 (Jan 15 2025 02:30:51) $
+        Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>
+        (LDAP library: OpenLDAP 20609)
 
-## Use -H to specify LDAP server
-## Use -D for the bind DN (User name)
-## Use -w to supply password directly
-## Use -b to provide the base DN for the search
-## Use "*" to specify the type of search
+
+### Use -H to specify LDAP server
+### Use -D for the bind DN (User name)
+### Use -w to supply password directly
+### Use -b to provide the base DN for the search
+### Use "*" to specify the type of search
 
 ## Basic User Enumeration
 ```bash
