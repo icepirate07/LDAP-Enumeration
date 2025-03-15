@@ -14,12 +14,13 @@ ldapsearch: @(#) $OpenLDAP: ldapsearch 2.6.9+dfsg-1 (Jan 15 2025 02:30:51) $
 ## Basic User Enumeration
 
 ldapsearch -H ldap://support.htb -D ldap@support.htb -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "*"
-
-# Replace "*" with the preffered search query. For ex:
+```
+```bash
 ## List only users
 
 ldapsearch -H ldap://support.htb -D ldap@support.htb -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "(objectClass=user)" sAMAccountName
-
+```
+```bash
 ## List all groups
 
 "(objectClass=group)" cn
