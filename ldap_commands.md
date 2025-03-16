@@ -22,11 +22,17 @@ ldapsearch -H ldap://server -D BindDN -w 'passwd' -b "Base DN" "Search Type"
 ldapsearch -H ldap://support.htb -D ldap@support.htb -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "*"
 ```
 ```bash
+## List Machine account quota (MAQ) for the domain
+
+ldapsearch -H ldap://support.htb -D ldap@support.htb -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "(objectClass=domain)" ms-DS-MachineAccountQuota
+```
+```bash
 ## List only users
 
 ldapsearch -H ldap://support.htb -D ldap@support.htb -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "(objectClass=user)" sAMAccountName
 ```
 ```bash
+## Just replace the last attribute
 ## List all groups
 
 "(objectClass=group)" cn
